@@ -1,0 +1,5 @@
+node_modules
+.vscode
+BracketExtension.csproj
+host.json
+local.settings.json
