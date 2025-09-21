@@ -9,7 +9,7 @@ const retrieveAccessToken = async () => {
     try {
         // Retrieve a secret
         const secret = await client.getSecret("startgg-access-token");
-        return secret;
+        return secret.value;
     } catch (err) {
         context.log.error("Error accessing Key Vault:", err);
         context.res = {
